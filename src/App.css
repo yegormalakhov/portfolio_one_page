@@ -17,15 +17,8 @@
 
 .heroSection {
   margin-top: 5rem;
-  display: flex;
-  flex-direction: row;
-  width: 90%;
 }
 .selfie {
-  width: 300px;
+  max-width: 100%;
   height: auto;
-  margin: auto 50px;
-}
-.about {
-  width: 70%;
 }
