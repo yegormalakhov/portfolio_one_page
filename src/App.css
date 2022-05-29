@@ -26,6 +26,75 @@
   height: auto;
 }
 
+/*Projects*/
+
+.project {
+  width: 300px;
+  height: 200px;
+  transition: all 1s ease;
+  border: 1px solid white;
+  perspective: 1200px;
+  overflow: hidden;
+  border-radius: 8px;
+}
+
+.project:hover .card__inner {
+  transform: rotateY(180deg);
+}
+.card__inner {
+  position: relative;
+  width: 100%;
+  height: 100%;
+  transition: transform 0.8s;
+  transform-style: preserve-3d;
+}
+
+.projectImg {
+  width: 100%;
+  height: 100%;
+}
+
+.front,
+.back {
+  position: absolute;
+  width: 300px;
+  height: 200px;
+  -webkit-backface-visibility: hidden;
+  backface-visibility: hidden;
+}
+
+.front {
+  background-color: rgb(72, 240, 240);
+}
+.back {
+  transform: rotateY(180deg);
+  background-color: rgb(64, 128, 255);
+  color: white;
+}
+
+/*project card style*/
+.card__header h3 {
+  padding: 0.5em;
+  margin: 0.5em;
+}
+
+.card__body {
+  padding: 0.5em;
+  margin: 0.5em 0.5em 0 0.5em;
+  text-align: center;
+}
+.card__body span {
+  margin: 10px;
+}
+
+/*Collaborations*/
+
+#collab {
+  margin: 1rem 8%;
+  padding: 2rem;
+  font-size: 1.2rem;
+}
+
 /*Footer*/
 footer {
   background-color: green;

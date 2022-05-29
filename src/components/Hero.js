@@ -3,7 +3,7 @@ import hero from "../media/hero.jpg";
 
 const Hero = () => {
   return (
-    <Container className="heroSection">
+    <Container className="heroSection" gutterBottom>
       <Grid
         container
         spacing={3}
