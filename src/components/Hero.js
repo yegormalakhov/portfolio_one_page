@@ -1,5 +1,4 @@
 import { Typography, Container, Box, Grid } from "@mui/material";
-import hero from "../media/hero.jpg";
 
 const Hero = () => {
   return (
