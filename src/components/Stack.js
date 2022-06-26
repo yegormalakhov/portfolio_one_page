@@ -47,10 +47,17 @@ const otherTech = [
 const Stack = () => {
   return (
     <Container className="StackSection">
-      <Typography variant="h2">Stack</Typography>
+      <Typography variant="h2" className="sectionTitle">
+        Stack
+      </Typography>
       <Grid container spacing={3}>
         <Grid item xs={12} md={4}>
-          <Box component="img" className="selfie" alt="Selfie" src={hero} />
+          <Box
+            component="img"
+            className="selfie"
+            alt="Selfie"
+            src={hero}
+          />
           <Typography variant="body1" align="left">
             Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
             eiusmod tempor incididunt ut labore et dolore magna aliqua. Volutpat

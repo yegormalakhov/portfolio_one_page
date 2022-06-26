@@ -5,6 +5,10 @@
 html {
   scroll-behavior: smooth;
 }
+
+.sectionTitle {
+  border-bottom: solid 2px rgba(0, 150, 0, 0.3);
+}
 /*Header*/
 
 .header {
@@ -27,6 +31,8 @@ html {
 .selfie {
   max-width: 100%;
   height: auto;
+  margin-top: 30px;
+  margin-bottom: 20px;
 }
 
 /*Projects*/

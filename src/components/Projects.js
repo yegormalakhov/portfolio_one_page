@@ -6,7 +6,7 @@ const Projects = () => {
   console.log(projectsDb[0].url);
   return (
     <Container sx={{ mt: 30 }}>
-      <Typography variant="h2">Projects</Typography>
+      <Typography variant="h2" className="sectionTitle">Projects</Typography>
       <Container>
         <Grid
           container
