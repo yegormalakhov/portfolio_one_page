@@ -37,8 +37,10 @@ const cssFrameworks = [
   { name: "Material UI", progress: 70 },
 ];
 const backend = [
-  { name: "Node.js", progress: 10 },
+  { name: "Node.js", progress: 30 },
+  { name: "Express.js", progress: 50 },
   { name: "MongoDB", progress: 10 },
+  { name: "SQL", progress: 40 },
 ];
 
 const otherTech = [
@@ -50,9 +52,9 @@ const otherTech = [
   { name: "Netlify", progress: 30 },
 ];
 
-const Stack = ({ stackSection }) => {
+const Stack = () => {
   return (
-    <Container ref={stackSection} className="StackSection">
+    <Container className="StackSection">
       <Typography variant="h2">Stack</Typography>
       <Grid container spacing={3}>
         <Grid item xs={12} md={4}>

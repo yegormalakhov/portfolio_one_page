@@ -36,9 +36,16 @@ function App() {
     <div className="App">
       <CssBaseline />
       <Header navToSt={scrollToSt} navToAb={scrollToAb} navToPr={scrollToPr} />
-      <Hero heroSection={heroSection} />
-      <Stack stackSection={stackSection} />
-      <Projects projectsSection={projectsSection} />
+      <section ref={heroSection}>
+        <Hero />
+      </section>
+      <section ref={stackSection}>
+        <Stack />
+      </section>
+      <section ref={projectsSection}>
+        <Projects />
+      </section>
+
       <Footer />
     </div>
   );

@@ -4,9 +4,9 @@ import todojs from "../media/projects/RevengeToDo.png";
 import rspGame from "../media/projects/RSP.png";
 import hackerNews from "../media/projects/HackerNewsClone.png";
 import temp from "../media/projects/markus-spiske-cvBBO4PzWPg-unsplash.jpg";
-const Projects = ({ projectsSection }) => {
+const Projects = () => {
   return (
-    <Container ref={projectsSection} className="ProjectsSection">
+    <Container className="ProjectsSection">
       <Typography variant="h2">Projects</Typography>
       <Grid container spacing={2} justifyContent="center">
         <Grid item xs={10} sm={6}>
