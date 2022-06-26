@@ -43,7 +43,7 @@ function App() {
         <Stack />
       </section>
       <section ref={projectsSection}>
-        <Projects />
+        <Projects/>
       </section>
 
       <Footer />

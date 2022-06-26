@@ -14,14 +14,6 @@ import {
   AccordionDetails,
 } from "@mui/material";
 import ExpandMoreIcon from "@mui/icons-material/ExpandMore";
-import html from "../media/logos/html-1.svg";
-import css from "../media/logos/css-3.svg";
-import javascript from "../media/logos/javascript-1.svg";
-import react from "../media/logos/react-2.svg";
-import bootstrap from "../media/logos/Bootstrap_logo.svg";
-import mongodb from "../media/logos/mongodb-icon-1.svg";
-import nodejs from "../media/logos/nodejs-seeklogo.com.svg";
-// import react from "../media/logos/react-2.svg";
 import LinearProgress from "@mui/material/LinearProgress";
 import hero from "../media/hero.jpg";
 

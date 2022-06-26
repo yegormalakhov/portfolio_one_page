@@ -1,14 +1,9 @@
 import { Container, Box, Grid, Typography, Button } from "@mui/material";
-import cocktails from "../assets/projects/GodlyDew.png";
-import todojs from "../assets/projects/RevengeToDo.png";
-import rspGame from "../assets/projects/RSP.png";
-import hackerNews from "../assets/projects/HackerNewsClone.png";
-import temp from "../assets/projects/markus-spiske-cvBBO4PzWPg-unsplash.jpg";
 import projectsDb from "./ProjectDb";
 import ProjectCard from "./ProjectCard";
 
 const Projects = () => {
-  console.log(projectsDb);
+  console.log(projectsDb[0].url);
   return (
     <Container sx={{ mt: 30 }}>
       <Typography variant="h2">Projects</Typography>
@@ -18,7 +13,7 @@ const Projects = () => {
           spacing={2}
           justifyContent="center"
           alignItems="center"
-          // sx={{ mt: 8 }}
+          sx={{ mt: 8 }}
         >
           {projectsDb.map((project, index) => {
             return (
@@ -27,12 +22,14 @@ const Projects = () => {
                   title={project.title}
                   descr={project.description}
                   stack={project.stack}
-                  screenshot={project.url}
+                  src={project.url}
+                  picTitle={project.pictureTitle}
                 />
               </Grid>
             );
           })}
         </Grid>
+        <Box component="img" src={require("../media/projects/GodlyDew.png").default} alt='ji'  width='200px' height='300px'/>
       </Container>
     </Container>
   );
