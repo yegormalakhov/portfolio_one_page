@@ -4,7 +4,6 @@ const projectsDb = [
     description:
       "First project after familiarizing with HTML and CSS. Project is a typical multypage website with recepies, where user can read, rate and save favourites.",
     stack: ["HTML", "CSS"],
-    pictureTitle: "cocktails",
     url: "assets/projects/GodlyDew.png",
   },
   {
@@ -12,7 +11,6 @@ const projectsDb = [
     description:
       "First project after familiarizing with HTML and CSS. Project is a typical multypage website with recepies, where user can read, rate and save favourites.",
     stack: ["HTML", "CSS"],
-    pictureTitle: "todojs",
     url: "assets/projects/revengetodo.png",
   },
   {
@@ -20,7 +18,6 @@ const projectsDb = [
     description:
       "First project after familiarizing with HTML and CSS. Project is a typical multypage website with recepies, where user can read, rate and save favourites.",
     stack: ["HTML", "CSS"],
-    pictureTitle: "rspGame",
     url: "assets/projects/rsp-2.png",
   },
   {
@@ -28,7 +25,6 @@ const projectsDb = [
     description:
       "First project after familiarizing with HTML and CSS. Project is a typical multypage website with recepies, where user can read, rate and save favourites.",
     stack: ["HTML", "CSS"],
-    pictureTitle: "hackerNews",
     url: "assets/projects/hackernewsclone.png",
   },
   {
@@ -36,7 +32,6 @@ const projectsDb = [
     description:
       "First project after familiarizing with HTML and CSS. Project is a typical multypage website with recepies, where user can read, rate and save favourites.",
     stack: ["HTML", "CSS"],
-    pictureTitle: "temp",
     url: "assets/projects/markus-spiske-cvBBO4PzWPg-unsplash.jpg",
   },
 ];

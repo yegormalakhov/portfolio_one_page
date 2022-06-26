@@ -5,7 +5,6 @@ import {
   Toolbar,
   Slide,
   useScrollTrigger,
-  Link,
 } from "@mui/material";
 
 function HideOnScroll({ children }) {

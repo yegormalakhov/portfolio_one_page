@@ -5,7 +5,7 @@ import CardMedia from "@mui/material/CardMedia";
 import Typography from "@mui/material/Typography";
 import { CardActionArea } from "@mui/material";
 
-const ProjectCard = ({ title, descr, stack, src, picTitle }) => {
+const ProjectCard = ({ title, descr, stack, src }) => {
   return (
     <Card sx={{ maxWidth: 500 }}>
       <CardActionArea>

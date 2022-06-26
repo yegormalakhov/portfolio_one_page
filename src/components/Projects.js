@@ -1,4 +1,4 @@
-import { Container, Box, Grid, Typography, Button } from "@mui/material";
+import { Container, Grid, Typography} from "@mui/material";
 import projectsDb from "./ProjectDb";
 import ProjectCard from "./ProjectCard";
 
@@ -29,7 +29,6 @@ const Projects = () => {
             );
           })}
         </Grid>
-        <Box component="img" src={require("../media/projects/GodlyDew.png").default} alt='ji'  width='200px' height='300px'/>
       </Container>
     </Container>
   );
