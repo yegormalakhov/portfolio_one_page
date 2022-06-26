@@ -4,15 +4,13 @@ import todojs from "../media/projects/RevengeToDo.png";
 import rspGame from "../media/projects/RSP.png";
 import hackerNews from "../media/projects/HackerNewsClone.png";
 import temp from "../media/projects/markus-spiske-cvBBO4PzWPg-unsplash.jpg";
-const Projects = () => {
+const Projects = ({ projectsSection }) => {
   return (
-    <Container>
-      <Typography variant="h2" gutterBottom>
-        Projects
-      </Typography>
+    <Container ref={projectsSection} className="ProjectsSection">
+      <Typography variant="h2">Projects</Typography>
       <Grid container spacing={2} justifyContent="center">
-        <Grid item sx={8}>
-          <div className="project">
+        <Grid item xs={10} sm={6}>
+          <div className="project" width={{ xs: 30, sm: 50 }}>
             <div className="card__inner">
               <div className="front">
                 <img
@@ -26,7 +24,7 @@ const Projects = () => {
                   <h3>Cocktails</h3>
                 </div>
                 <div className="card__body">
-                  <Typography variant="body2" gutterBottom sx={{ mb: 3 }}>
+                  <Typography variant="body2" sx={{ mb: 3 }}>
                     Lorem ipsum dolor sit amet consectetur adipisicing elit.
                     Reprehenderit, eveniet exercitationem? Eaque enim doloribus,
                   </Typography>
@@ -38,7 +36,7 @@ const Projects = () => {
             </div>
           </div>
         </Grid>
-        <Grid item sx={6}>
+        <Grid item xs={10} sm={6}>
           <div className="project">
             <div className="card__inner">
               <div className="front">
@@ -54,7 +52,7 @@ const Projects = () => {
                   <h3 variant="h6">Rock, Scissors, Paper game</h3>
                 </div>
                 <div className="card__body">
-                  <Typography variant="body2" gutterBottom sx={{ mb: 3 }}>
+                  <Typography variant="body2" sx={{ mb: 3 }}>
                     Lorem ipsum dolor sit amet consectetur adipisicing elit.
                     Reprehenderit, eveniet exercitationem? Eaque enim doloribus,
                   </Typography>
@@ -66,7 +64,7 @@ const Projects = () => {
             </div>
           </div>
         </Grid>
-        <Grid item sx={6}>
+        <Grid item xs={10} sm={6}>
           {" "}
           <div className="project">
             <div className="card__inner">
@@ -83,7 +81,7 @@ const Projects = () => {
                   <h3>Revenge ToDo</h3>
                 </div>
                 <div className="card__body">
-                  <Typography variant="body2" gutterBottom sx={{ mb: 3 }}>
+                  <Typography variant="body2" sx={{ mb: 3 }}>
                     Lorem ipsum dolor sit amet consectetur adipisicing elit.
                     Reprehenderit, eveniet exercitationem? Eaque enim doloribus,
                   </Typography>
@@ -96,7 +94,7 @@ const Projects = () => {
           </div>
         </Grid>
 
-        <Grid item sx={4}>
+        <Grid item xs={10} sm={6}>
           <div className="project">
             <div className="card__inner">
               <div className="front">
@@ -112,7 +110,7 @@ const Projects = () => {
                   <h3>Hacker News website-clone</h3>
                 </div>
                 <div className="card__body">
-                  <Typography variant="body2" gutterBottom sx={{ mb: 3 }}>
+                  <Typography variant="body2" sx={{ mb: 3 }}>
                     Lorem ipsum dolor sit amet consectetur adipisicing elit.
                     Reprehenderit, eveniet exercitationem? Eaque enim doloribus,
                   </Typography>
@@ -124,7 +122,7 @@ const Projects = () => {
             </div>
           </div>
         </Grid>
-        <Grid item sx={4}>
+        <Grid item xs={10} sm={6}>
           <div className="project">
             <div className="card__inner">
               <div className="front">
@@ -140,7 +138,7 @@ const Projects = () => {
                   <h3>tepm project card</h3>
                 </div>
                 <div className="card__body">
-                  <Typography variant="body2" gutterBottom sx={{ mb: 3 }}>
+                  <Typography variant="body2" sx={{ mb: 3 }}>
                     Lorem ipsum dolor sit amet consectetur adipisicing elit.
                     Reprehenderit, eveniet exercitationem? Eaque enim doloribus,
                   </Typography>

@@ -2,6 +2,9 @@
   text-align: center;
 }
 
+html {
+  scroll-behavior: smooth;
+}
 /*Header*/
 
 .header {
@@ -36,6 +39,7 @@
   perspective: 1200px;
   overflow: hidden;
   border-radius: 8px;
+  flex-basis: auto;
 }
 
 .project:hover .card__inner {
@@ -105,3 +109,10 @@ footer {
   width: 40px;
   height: auto;
 }
+
+/* @media only screen and (min-width: 600px) {
+  .project {
+    width: 280px;
+    height: 230px;
+  }
+} */

@@ -1,9 +1,9 @@
 import { Typography, Container, Box, Grid } from "@mui/material";
 import hero from "../media/hero.jpg";
 
-const Hero = () => {
+const Hero = ({ heroSection }) => {
   return (
-    <Container className="heroSection" gutterBottom>
+    <Container ref={heroSection} className="heroSection">
       <Grid
         container
         spacing={3}

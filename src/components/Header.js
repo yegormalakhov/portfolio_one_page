@@ -5,6 +5,7 @@ import {
   Toolbar,
   Slide,
   useScrollTrigger,
+  Link,
 } from "@mui/material";
 
 function HideOnScroll({ children }) {
@@ -12,7 +13,7 @@ function HideOnScroll({ children }) {
   return <Slide in={!trigger}>{children}</Slide>;
 }
 
-const Header = (props) => {
+const Header = ({ navToSt, navToAb, navToPr, ...props }) => {
   return (
     <HideOnScroll {...props}>
       <AppBar>
@@ -21,9 +22,26 @@ const Header = (props) => {
             Yegor Malakhov
           </Typography>
           <Box className="headerMenu">
-            <Typography sx={{ minWidth: 100 }}>About</Typography>
-            <Typography sx={{ minWidth: 100 }}>Stack</Typography>
-            <Typography sx={{ minWidth: 100 }}>Projects</Typography>
+            <Typography
+              onClick={navToAb}
+              sx={{ minWidth: 100, cursor: "pointer" }}
+            >
+              About
+            </Typography>
+
+            <Typography
+              onClick={navToSt}
+              sx={{ minWidth: 100, cursor: "pointer" }}
+            >
+              Stack
+            </Typography>
+
+            <Typography
+              onClick={navToPr}
+              sx={{ minWidth: 100, cursor: "pointer" }}
+            >
+              Projects
+            </Typography>
             <Typography sx={{ minWidth: 100 }}>Contacts</Typography>
           </Box>
         </Toolbar>

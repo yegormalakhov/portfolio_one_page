@@ -50,20 +50,13 @@ const otherTech = [
   { name: "Netlify", progress: 30 },
 ];
 
-const Stack = () => {
+const Stack = ({ stackSection }) => {
   return (
-    <Container>
-      <Typography variant="h2" gutterBottom>
-        Stack
-      </Typography>
+    <Container ref={stackSection} className="StackSection">
+      <Typography variant="h2">Stack</Typography>
       <Grid container spacing={3}>
         <Grid item xs={12} md={4}>
-          <Box
-            component="img"
-            className="selfie"
-            alt="Selfie"
-            src={hero}
-          />
+          <Box component="img" className="selfie" alt="Selfie" src={hero} />
           <Typography variant="body1" align="left">
             Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
             eiusmod tempor incididunt ut labore et dolore magna aliqua. Volutpat
@@ -73,9 +66,9 @@ const Stack = () => {
           </Typography>
         </Grid>
         <Grid item xs={12} md={8}>
-          {stackLanguages.map((language) => {
+          {stackLanguages.map((language, index) => {
             return (
-              <Grid container>
+              <Grid container key={index}>
                 <Grid item xs={12}>
                   <Typography sx={{ mt: 2 }} variant="h6" component="div">
                     {language.name}
@@ -95,9 +88,9 @@ const Stack = () => {
               </Grid>
             );
           })}
-          {libraries.map((library) => {
+          {libraries.map((library, index) => {
             return (
-              <Grid container>
+              <Grid container key={index}>
                 <Grid item xs={12}>
                   <Typography sx={{ mt: 2 }} variant="h6" component="div">
                     {library.name}
@@ -117,9 +110,9 @@ const Stack = () => {
               </Grid>
             );
           })}
-          {cssFrameworks.map((cf) => {
+          {cssFrameworks.map((cf, index) => {
             return (
-              <Grid container>
+              <Grid container key={index}>
                 <Grid item xs={12}>
                   <Typography sx={{ mt: 2 }} variant="h6" component="div">
                     {cf.name}
@@ -139,9 +132,9 @@ const Stack = () => {
               </Grid>
             );
           })}
-          {backend.map((backendTech) => {
+          {backend.map((backendTech, index) => {
             return (
-              <Grid container>
+              <Grid container key={index}>
                 <Grid item xs={12}>
                   <Typography sx={{ mt: 2 }} variant="h6" component="div">
                     {backendTech.name}
@@ -171,9 +164,9 @@ const Stack = () => {
                 <Typography>Other familiar technologies and tools.</Typography>
               </AccordionSummary>
               <AccordionDetails>
-                {otherTech.map((other) => {
+                {otherTech.map((other, index) => {
                   return (
-                    <Grid container>
+                    <Grid container key={index}>
                       <Grid item xs={12}>
                         <Typography sx={{ mt: 2 }} variant="h6" component="div">
                           {other.name}
@@ -211,7 +204,7 @@ const Stack = () => {
                 alt="html logo"
               />
               <CardContent>
-                <Typography gutterBottom variant="h5" component="div">
+                <Typography ottom variant="h5" component="div">
                   HTML
                 </Typography>
               </CardContent>
@@ -226,7 +219,7 @@ const Stack = () => {
                 alt="html logo"
               />
               <CardContent>
-                <Typography gutterBottom variant="h5" component="div">
+                <Typography ottom variant="h5" component="div">
                   CSS
                 </Typography>
               </CardContent>
@@ -241,7 +234,7 @@ const Stack = () => {
                 alt="html logo"
               />
               <CardContent>
-                <Typography gutterBottom variant="h5" component="div">
+                <Typography ottom variant="h5" component="div">
                   JavaScript
                 </Typography>
               </CardContent>
@@ -256,7 +249,7 @@ const Stack = () => {
                 alt="html logo"
               />
               <CardContent>
-                <Typography gutterBottom variant="h5" component="div">
+                <Typography ottom variant="h5" component="div">
                   React
                 </Typography>
               </CardContent>
@@ -271,7 +264,7 @@ const Stack = () => {
                 alt="html logo"
               />
               <CardContent>
-                <Typography gutterBottom variant="h5" component="div">
+                <Typography ottom variant="h5" component="div">
                   Bootstrap
                 </Typography>
               </CardContent>
@@ -286,7 +279,7 @@ const Stack = () => {
                 alt="html logo"
               />
               <CardContent>
-                <Typography gutterBottom variant="h5" component="div">
+                <Typography ottom variant="h5" component="div">
                   MongoDB
                 </Typography>
               </CardContent>
@@ -301,7 +294,7 @@ const Stack = () => {
                 alt="html logo"
               />
               <CardContent>
-                <Typography gutterBottom variant="h5" component="div">
+                <Typography ottom variant="h5" component="div">
                   Node.js
                 </Typography>
               </CardContent>
