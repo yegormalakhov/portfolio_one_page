@@ -3,16 +3,15 @@ import hero from "../media/hero.jpg";
 
 const Hero = () => {
   return (
-    <Container className="heroSection">
+    <Container className="heroSection" sx={{ height: "100vh" }}>
       <Grid
         container
         spacing={3}
         alignItems="flex-start"
         justifyContent="center"
       >
-        <Grid item xs={12} sm={7} md={4} lg={3}></Grid>
         <Grid item xs={12} sm={10} md={8} lg={9}>
-          <Box className="about">
+          <Box className="about" sx={{ mt: "100px" }}>
             <Typography variant="h1" component="h1">
               Hello, my dear visitor!
             </Typography>

@@ -1,12 +1,14 @@
-import { Container, Grid, Typography} from "@mui/material";
+import { Container, Grid, Typography } from "@mui/material";
 import projectsDb from "./ProjectDb";
 import ProjectCard from "./ProjectCard";
 
 const Projects = () => {
   console.log(projectsDb[0].url);
   return (
-    <Container sx={{ mt: 30 }}>
-      <Typography variant="h2" className="sectionTitle">Projects</Typography>
+    <Container sx={{ mt: 15 }}>
+      <Typography variant="h2" className="sectionTitle">
+        Projects
+      </Typography>
       <Container>
         <Grid
           container

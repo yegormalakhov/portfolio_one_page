@@ -13,18 +13,20 @@ function App() {
   const projectsSection = useRef(null);
   const heroSection = useRef(null);
 
-  function scrollToSt() {
-    window.scrollTo({
-      top: stackSection.current.offsetTop,
-      behavior: "smooth",
-    });
-  }
   function scrollToAb() {
     window.scrollTo({
       top: heroSection.current.offsetTop,
       behavior: "smooth",
     });
   }
+
+  function scrollToSt() {
+    window.scrollTo({
+      top: stackSection.current.offsetTop,
+      behavior: "smooth",
+    });
+  }
+
   function scrollToPr() {
     window.scrollTo({
       top: projectsSection.current.offsetTop,
@@ -43,7 +45,7 @@ function App() {
         <Stack />
       </section>
       <section ref={projectsSection}>
-        <Projects/>
+        <Projects />
       </section>
 
       <Footer />
