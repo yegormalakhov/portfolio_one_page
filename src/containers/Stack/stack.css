@@ -1,0 +1,126 @@
+.stackSection {
+    background-color: var(--clr-darkblue);
+    color: var(--txt-clr-light);
+    align-items: flex-start;
+    font-size: var(--fs-p);
+    padding-bottom: 5rem;
+    font-family: var(--font-ysabeau);
+  }
+
+  .stackSection h2 {
+    color: var(--clr-lightorange);
+    font-weight: bold;
+    font-size: var(--fs-h2);
+    font-family: var(--font-ysabeau);    
+  }
+
+  .stack__title {
+    /* background-image: url(../../media/blog03.png);
+    background-repeat: no-repeat;
+    background-size: cover; */
+    padding: 3rem;
+  }
+  .stackIntro {
+    font-size: var(--fs-h1);
+    font-weight: bold;
+  }
+  .stackContainer {
+    width: 90%;
+    justify-content: space-around;
+    align-items: start;
+    /* background: var(--clr-blue); */
+    margin: auto;
+    border-radius: 5px;
+  }
+  /* .stackContainer div {
+    background: var(--clr-blue);
+    justify-content: space-evenly;
+    margin: 0 auto;
+  } */
+  
+  @media screen and ( min-width: 1440px){
+      .stackContainer {
+        margin: 1rem auto 5rem;
+      }
+  }
+
+
+  /* redesign-stack */
+
+  .stackSection {
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .stackContainer {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 1rem;
+  }
+
+  .stack__subtopic {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    background: var(--clr-blue); 
+  }
+
+  .stack__imgs-container {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 1rem;
+    margin: 2rem;
+  }
+  .frontend {
+    background: var(--bg-gradient-blue);
+  }
+  .backend {
+    background: var(--bg-gradient-blue-reverse);
+  }
+  .stack__list {
+    display: flex;
+    flex-direction: column;
+    padding: 1rem;
+    margin: 0 2rem;
+    
+  }
+
+  .stackContainer img {
+    width: 25%;
+    min-width: 100px;
+    object-fit: contain;
+    padding: 1rem;
+    align-self: center;
+    
+  }
+
+  @media screen and (min-width: 1500px) {
+    .stackContainer img {
+      max-width: 250px;
+      margin: 2rem;
+    }
+  }
+  @media screen and (max-width: 600px) {
+    .stack__subtopic {
+      flex-direction: column;
+    }
+    .stack__subtopic.backend {
+      flex-direction: column-reverse;
+    }
+    .stackContainer img {
+      min-width: 70px;
+    }
+    .stack__imgs-container {
+      margin: 0;
+      padding: 0;
+      flex-wrap: wrap;
+
+    }
+  }
+
+  @media screen and (max-width: 425px) {
+    
+  }

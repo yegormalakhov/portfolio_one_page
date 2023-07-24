@@ -1,0 +1,13 @@
+
+.projectsSection {
+    background: var( --bg-gradient-blue-vertical);
+    color: var(--tclr-dark);
+    padding-bottom: 5rem;
+    padding: 2rem;;
+  }
+  .section__title h1{
+    font-size: var(--fs-h1);
+    font-weight: bold;
+    padding: 2rem;
+    font-family: var(--font-ysabeau);
+  }

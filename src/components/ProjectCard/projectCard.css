@@ -1,0 +1,29 @@
+.card__header h3 {
+    padding: 0.5em;
+    margin: 0.5em;
+  }
+  
+  .card__body {
+    padding: 0.5em;
+    margin: 0.5em 0.5em 0 0.5em;
+    text-align: center;
+  }
+  .card__body span {
+    margin: 10px;
+  }
+
+  p.tags {
+    color: var(--clr-lightblue);
+    display: initial;
+    background: var(--clr-darkblue);
+    padding: 0.5em;
+    margin: 0.3rem;
+    border-radius: 5px;
+  }
+
+  button {
+    cursor: pointer;
+  }
+  button:hover {
+    color: var(--clr-orange);
+  }

@@ -1,54 +1,67 @@
 import "./App.css";
-import Header from "./components/Header";
-import Hero from "./components/Hero";
-import Stack from "./components/Stack";
-import Projects from "./components/Projects";
-import Footer from "./components/Footer";
 import CssBaseline from "@mui/material/CssBaseline";
 import { useRef } from "react";
 import React from "react";
+
+import { Header, Hero, Stack, Projects, Contact, Footer} from './containers';
+import { ProjectCard, ProjectDb} from './components';
 
 function App() {
   const stackSection = useRef(null);
   const projectsSection = useRef(null);
   const heroSection = useRef(null);
+  const contactSection = useRef(null);
 
-  function scrollToAb() {
+  function scrollToAbout() {
     window.scrollTo({
       top: heroSection.current.offsetTop,
       behavior: "smooth",
     });
   }
 
-  function scrollToSt() {
+  function scrollToStack() {
     window.scrollTo({
       top: stackSection.current.offsetTop,
       behavior: "smooth",
     });
   }
 
-  function scrollToPr() {
+  function scrollToProjects() {
     window.scrollTo({
       top: projectsSection.current.offsetTop,
       behavior: "smooth",
     });
   }
 
+  function scrollToContacts() {
+    window.scrollTo({
+      top: contactSection.current.offsetTop,
+      behavior: "smooth",
+    });
+  }
+  
   return (
     <div className="App">
       <CssBaseline />
-      <Header navToSt={scrollToSt} navToAb={scrollToAb} navToPr={scrollToPr} />
-      <section ref={heroSection}>
+      <Header 
+          navToSt={scrollToStack} 
+          navToAb={scrollToAbout} 
+          navToPr={scrollToProjects} 
+          navToCon={scrollToContacts}
+      />
+       <section className="heroSection flex" ref={heroSection}>
         <Hero />
       </section>
-      <section ref={stackSection}>
+      <section className="stackSection flex" ref={stackSection}>
         <Stack />
       </section>
-      <section ref={projectsSection}>
+       <section className="projectsSection" ref={projectsSection}>
         <Projects />
       </section>
-
-      <Footer />
+      <section className="contact__section flex" ref={contactSection}>
+        <Contact />
+      </section>
+     <Footer />  
     </div>
   );
 }
