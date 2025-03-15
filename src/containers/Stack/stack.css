@@ -90,7 +90,7 @@
 
   .stackContainer img {
     width: 25%;
-    min-width: 100px;
+    min-width: 75px;
     object-fit: contain;
     padding: 1rem;
     align-self: center;
